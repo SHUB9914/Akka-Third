@@ -29,16 +29,12 @@ object DataBaseRepo {
   }
   def billProcess(accNo:Long,category:String): String ={
     val (user , billes)=DataBaseRepo.getter(accNo)
-    println("cata=========================="+category)
     val updatBill: List[Billers] =  billes.filter(_.category!=category)
-    println(">>>>>>"+updatBill)
     val amount: List[Double] = billes.filter(_.category=="Car").map(_.paidAmount)
     val paidAmount = amount(0)
-
     if(user.intialAmount >=paidAmount){
       val netBalance = user.intialAmount-paidAmount
       val updateUser = user.copy(intialAmount = netBalance)
-      println("////////////////////"+(updateUser,updatBill))
       val result = setter(updateUser,updatBill)
       "Success"
     }
