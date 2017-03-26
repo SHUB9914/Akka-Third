@@ -22,10 +22,10 @@ object main extends App{
    val system = ActorSystem("Process", conf)
  // val system = ActorSystem("AccountingSystem")
 
-  val UserAccountGeneratorRef = system.actorOf(Props[UserAccountGenerator])
-  val BillProcessActorRef=system.actorOf(Props[BillProcessActor])
-  val SalaryDepositeActorRef=system.actorOf(Props(new SalaryDepositeActor(BillProcessActorRef)))
-  val BillAssociaterActorRef = system.actorOf(Props[BillAssociaterActor])
+  val UserAccountGeneratorRef = system.actorOf(Props[UserAccountGenerator].withDispatcher("my-dispatcher"), "myactor1")
+  val BillProcessActorRef=system.actorOf(Props[BillProcessActor].withDispatcher("my-dispatcher"), "myactor2")
+  val SalaryDepositeActorRef=system.actorOf(Props(new SalaryDepositeActor(BillProcessActorRef)).withDispatcher("my-dispatcher"), "myactor3")
+  val BillAssociaterActorRef = system.actorOf(Props[BillAssociaterActor].withDispatcher("my-dispatcher"))
 
   val user1 = User(1234,"shubham","noida","shubham123@gmail.com",500.0)
   val user2 = User(123456,"Rahul","Agra","Rahul123@gamil.com",1000.0)
@@ -53,8 +53,8 @@ object main extends App{
 
  Thread.sleep(1000)
   println("----------------------------"+AddUser.users.toString())
-  val ReportProcessRef = system.actorOf(Props[ReportProcess])
-  val ReportGeneratorActorRef = system.actorOf(Props(new ReportGeneratorActor(ReportProcessRef,system)))
+  val ReportProcessRef = system.actorOf(Props[ReportProcess].withDispatcher("my-dispatcher"))
+  val ReportGeneratorActorRef = system.actorOf(Props(new ReportGeneratorActor(ReportProcessRef,system)).withDispatcher("my-dispatcher"))
  ReportGeneratorActorRef ! Report
 
 

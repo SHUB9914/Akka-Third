@@ -11,7 +11,7 @@ import scala.collection.mutable
   */
 class ReportProcess extends Actor with ActorLogging {
   override def receive = {
-    case Report => //log.info("hello shubham")
+    case Report =>
       val information: mutable.Map[Long, (User, List[Billers])] = AddUser.users
       val accNumbers: List[Long] = information.keys.toList
       accNumbers.map{x=>
@@ -20,6 +20,8 @@ class ReportProcess extends Actor with ActorLogging {
         val accno = user.accNo
         log.info(s"user name ====$uname and Account number is $accno")
         log.info(s"Bills Associated with this user ====$bills")
+        log.info("-------------------------------------------------------------------------------------------")
+
       }
 
   }

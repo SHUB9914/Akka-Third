@@ -1,6 +1,6 @@
 package userAccountService
 
-import akka.actor.Actor
+import akka.actor.{Actor, ActorLogging}
 import caseClass.{Billers, User}
 import dbRepo.{AddUser, DataBaseRepo}
 
@@ -8,7 +8,7 @@ import dbRepo.{AddUser, DataBaseRepo}
 /**
   * Created by knoldus on 23/3/17.
   */
-class UserAccountGenerator extends Actor {
+class UserAccountGenerator extends Actor with ActorLogging{
   override def receive = {
 
     case user: User =>
@@ -20,10 +20,10 @@ class UserAccountGenerator extends Actor {
         val usr: List[User] =  values.filter(_.userName==user.userName).toList
         if(usr.isEmpty){
           DataBaseRepo.newUserSetter(user)
-        } else println("sorry this username already exist")
+        } else log.info("sorry this username already exist")
 
       }
 
-    case _ => println("plz give user properly")
+    case _ => log.info("plz give user properly")
   }
 }

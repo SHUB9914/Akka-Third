@@ -1,11 +1,15 @@
-2017-03-25  INFO [Process-akka.actor.default-dispatcher-4] a.e.s.Slf4jLogger - Slf4jLogger started
-2017-03-25 18:17:01.549UTC DEBUG[Process-akka.actor.default-dispatcher-4] a.e.EventStream - logger log1-Slf4jLogger started
-2017-03-25 18:17:01.561UTC DEBUG[Process-akka.actor.default-dispatcher-4] a.e.EventStream - Default Loggers started
-2017-03-25 18:17:12.776UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - user name ====shubham123@gmail.com and Account number is 1234
-2017-03-25 18:17:12.804UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - Bills Associated with this user ====List(Billers(Food,shubham,1234,1/1/2001,500.0,3,2,1000.0))
-2017-03-25 18:17:12.807UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - user name ====Rahul123@gamil.com and Account number is 123456
-2017-03-25 18:17:12.808UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - Bills Associated with this user ====List(Billers(Car,Rahul,1234,1/1/2001,500.0,3,2,1000.0), Billers(Food,Rahul,1234,1/1/2001,500.0,3,2,1000.0))
-2017-03-25 18:17:22.759UTC INFO [Process-akka.actor.default-dispatcher-2] b.ReportProcess - user name ====shubham123@gmail.com and Account number is 1234
-2017-03-25 18:17:22.759UTC INFO [Process-akka.actor.default-dispatcher-2] b.ReportProcess - Bills Associated with this user ====List(Billers(Food,shubham,1234,1/1/2001,500.0,3,2,1000.0))
-2017-03-25 18:17:22.759UTC INFO [Process-akka.actor.default-dispatcher-2] b.ReportProcess - user name ====Rahul123@gamil.com and Account number is 123456
-2017-03-25 18:17:22.759UTC INFO [Process-akka.actor.default-dispatcher-2] b.ReportProcess - Bills Associated with this user ====List(Billers(Car,Rahul,1234,1/1/2001,500.0,3,2,1000.0), Billers(Food,Rahul,1234,1/1/2001,500.0,3,2,1000.0))
+2017-03-26  INFO [Process-akka.actor.default-dispatcher-4] a.e.s.Slf4jLogger - Slf4jLogger started
+2017-03-26 04:23:45.589UTC DEBUG[Process-akka.actor.default-dispatcher-4] a.e.EventStream - logger log1-Slf4jLogger started
+2017-03-26 04:23:45.591UTC DEBUG[Process-akka.actor.default-dispatcher-4] a.e.EventStream - Default Loggers started
+2017-03-26 04:23:56.795UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - user name ====shubham123@gmail.com and Account number is 1234
+2017-03-26 04:23:56.796UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - Bills Associated with this user ====List(Billers(Food,shubham,1234,1/1/2001,500.0,3,2,1000.0))
+2017-03-26 04:23:56.796UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - -------------------------------------------------------------------------------------------
+2017-03-26 04:23:56.796UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - user name ====Rahul123@gamil.com and Account number is 123456
+2017-03-26 04:23:56.797UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - Bills Associated with this user ====List(Billers(Car,Rahul,1234,1/1/2001,500.0,3,2,1000.0), Billers(Food,Rahul,1234,1/1/2001,500.0,3,2,1000.0))
+2017-03-26 04:23:56.797UTC INFO [Process-akka.actor.default-dispatcher-5] b.ReportProcess - -------------------------------------------------------------------------------------------
+2017-03-26 04:24:06.791UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - user name ====shubham123@gmail.com and Account number is 1234
+2017-03-26 04:24:06.791UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - Bills Associated with this user ====List(Billers(Food,shubham,1234,1/1/2001,500.0,3,2,1000.0))
+2017-03-26 04:24:06.791UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - -------------------------------------------------------------------------------------------
+2017-03-26 04:24:06.791UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - user name ====Rahul123@gamil.com and Account number is 123456
+2017-03-26 04:24:06.791UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - Bills Associated with this user ====List(Billers(Car,Rahul,1234,1/1/2001,500.0,3,2,1000.0), Billers(Food,Rahul,1234,1/1/2001,500.0,3,2,1000.0))
+2017-03-26 04:24:06.791UTC INFO [Process-akka.actor.default-dispatcher-3] b.ReportProcess - -------------------------------------------------------------------------------------------
